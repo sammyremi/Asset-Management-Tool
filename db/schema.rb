@@ -11,9 +11,12 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2023_03_24_222613) do
   create_table "aios", force: :cascade do |t|
 =======
+=======
+>>>>>>> bc516a8 (create laptop, headset and phone models)
 ActiveRecord::Schema[7.0].define(version: 2023_03_23_204406) do
   create_table "access_points", force: :cascade do |t|
     t.string "IP_Phone"
@@ -79,7 +82,14 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_23_204406) do
   create_table "headsets", force: :cascade do |t|
 =======
   create_table "keyboards", force: :cascade do |t|
+<<<<<<< HEAD
 >>>>>>> 697a811 (first commit)
+=======
+=======
+ActiveRecord::Schema[7.0].define(version: 2023_03_22_215445) do
+  create_table "headsets", force: :cascade do |t|
+>>>>>>> 924e57d (create laptop, headset and phone models)
+>>>>>>> bc516a8 (create laptop, headset and phone models)
     t.string "manufacturer"
     t.string "brand_model"
     t.string "zone"
@@ -94,10 +104,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_23_204406) do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   create_table "laptops", force: :cascade do |t|
 =======
   create_table "mice", force: :cascade do |t|
 >>>>>>> 697a811 (first commit)
+=======
+  create_table "mice", force: :cascade do |t|
+=======
+  create_table "laptops", force: :cascade do |t|
+>>>>>>> 924e57d (create laptop, headset and phone models)
+>>>>>>> bc516a8 (create laptop, headset and phone models)
     t.string "manufacturer"
     t.string "brand_model"
     t.string "zone"
@@ -111,6 +128,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_23_204406) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   create_table "printers", force: :cascade do |t|
     t.string "manufacturer"
@@ -125,6 +143,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_23_204406) do
     t.datetime "updated_at", null: false
   end
 
+=======
+=======
+>>>>>>> bc516a8 (create laptop, headset and phone models)
   create_table "smart_phones", force: :cascade do |t|
     t.string "manufacturer"
     t.string "brand_model"
@@ -138,6 +159,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_23_204406) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
 =======
 >>>>>>> 697a811 (first commit)
+=======
+>>>>>>> 924e57d (create laptop, headset and phone models)
+>>>>>>> bc516a8 (create laptop, headset and phone models)
 end

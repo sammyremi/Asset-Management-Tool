@@ -2,6 +2,7 @@
 
 <h1>Smart phones</h1>
 
+<<<<<<< HEAD
 <% if SmartPhone.count < 1 %>
   <%= link_to "New smart phone", new_smart_phone_path %>
 <% else %>
@@ -41,3 +42,15 @@
   <%= link_to "New smart phone", new_smart_phone_path %>
 <% end %>
 
+=======
+<div id="smart_phones">
+  <% @smart_phones.each do |smart_phone| %>
+    <%= render smart_phone %>
+    <p>
+      <%= link_to "Show this smart phone", smart_phone %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New smart phone", new_smart_phone_path %>
+>>>>>>> bc516a8 (create laptop, headset and phone models)

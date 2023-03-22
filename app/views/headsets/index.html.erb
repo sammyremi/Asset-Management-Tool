@@ -2,6 +2,7 @@
 
 <h1>Headsets</h1>
 
+<<<<<<< HEAD
 <% if Headset.count < 1 %>
   <%= link_to "New headset", new_headset_path %>
 <% else %>
@@ -43,3 +44,15 @@
 
   <%= link_to "New headset", new_headset_path %>
 <% end %>
+=======
+<div id="headsets">
+  <% @headsets.each do |headset| %>
+    <%= render headset %>
+    <p>
+      <%= link_to "Show this headset", headset %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New headset", new_headset_path %>
+>>>>>>> bc516a8 (create laptop, headset and phone models)

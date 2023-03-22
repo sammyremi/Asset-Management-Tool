@@ -2,6 +2,7 @@
 
 <h1>Laptops</h1>
 
+<<<<<<< HEAD
 <% if Laptop.count < 1 %>
   <%= link_to "New laptop", new_laptop_path %>
 <% else %>
@@ -42,3 +43,15 @@
   </table>
   <%= link_to "New laptop", new_laptop_path %>
 <% end %>
+=======
+<div id="laptops">
+  <% @laptops.each do |laptop| %>
+    <%= render laptop %>
+    <p>
+      <%= link_to "Show this laptop", laptop %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New laptop", new_laptop_path %>
+>>>>>>> bc516a8 (create laptop, headset and phone models)
