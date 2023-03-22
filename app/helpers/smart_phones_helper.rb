@@ -1,0 +1,2 @@
+module SmartPhonesHelper
+end

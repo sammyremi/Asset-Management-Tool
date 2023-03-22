@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @headset %>
+
+<div>
+  <%= link_to "Edit this headset", edit_headset_path(@headset) %> |
+  <%= link_to "Back to headsets", headsets_path %>
+
+  <%= button_to "Destroy this headset", @headset, method: :delete %>
+</div>
