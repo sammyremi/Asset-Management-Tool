@@ -2,13 +2,42 @@
 
 <h1>Smart phones</h1>
 
-<div id="smart_phones">
-  <% @smart_phones.each do |smart_phone| %>
-    <%= render smart_phone %>
-    <p>
-      <%= link_to "Show this smart phone", smart_phone %>
-    </p>
-  <% end %>
-</div>
+<% if SmartPhone.count < 1 %>
+  <%= link_to "New smart phone", new_smart_phone_path %>
+<% else %>
+  <table class="table table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Manufacturer</th>
+        <th scope="col">Brand</th>
+        <th scope="col">Zone</th>
+        <th scope="col">Department</th>
+        <th scope="col">Condition</th>
+        <th scope="col">State</th>
+        <th scope="col">Serial_number</th>
+        <th scope="col">Location</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @smart_phones.each do |smart_phone| %>
+        <tr>
+          
+          <td><%= smart_phone.manufacturer %></td>
+          <td><%= smart_phone.brand_model %></td>
+          <td><%= smart_phone.zone %></td>
+          <td><%= smart_phone.department %></td>
+          <td><%= smart_phone.condition %></td>
+          <td><%= smart_phone.asset_state %></td>
+          <td><%= smart_phone.serial_number %></td>
+          <td><%= smart_phone.location %></td>
+          <td>
+            <%= link_to "Show this smart_phone", smart_phone %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= link_to "New smart phone", new_smart_phone_path %>
+<% end %>
 
-<%= link_to "New smart phone", new_smart_phone_path %>
