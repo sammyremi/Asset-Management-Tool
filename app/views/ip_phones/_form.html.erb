@@ -1,0 +1,57 @@
+<%= form_with(model: ip_phone) do |form| %>
+  <% if ip_phone.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(ip_phone.errors.count, "error") %> prohibited this ip_phone from being saved:</h2>
+
+      <ul>
+        <% ip_phone.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :manufacturer, style: "display: block" %>
+    <%= form.text_field :manufacturer %>
+  </div>
+
+  <div>
+    <%= form.label :brand_model, style: "display: block" %>
+    <%= form.text_field :brand_model %>
+  </div>
+
+  <div>
+    <%= form.label :zone, style: "display: block" %>
+    <%= form.text_field :zone %>
+  </div>
+
+  <div>
+    <%= form.label :department, style: "display: block" %>
+    <%= form.text_field :department %>
+  </div>
+
+  <div>
+    <%= form.label :condition, style: "display: block" %>
+    <%= form.text_field :condition %>
+  </div>
+
+  <div>
+    <%= form.label :asset_state, style: "display: block" %>
+    <%= form.text_field :asset_state %>
+  </div>
+
+  <div>
+    <%= form.label :serial_number, style: "display: block" %>
+    <%= form.number_field :serial_number %>
+  </div>
+
+  <div>
+    <%= form.label :location, style: "display: block" %>
+    <%= form.text_field :location %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

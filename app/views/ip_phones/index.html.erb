@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Ip phones</h1>
+
+<div id="ip_phones">
+  <% @ip_phones.each do |ip_phone| %>
+    <%= render ip_phone %>
+    <p>
+      <%= link_to "Show this ip phone", ip_phone %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New ip phone", new_ip_phone_path %>

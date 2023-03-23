@@ -10,12 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2023_03_24_222613) do
   create_table "aios", force: :cascade do |t|
+=======
+ActiveRecord::Schema[7.0].define(version: 2023_03_23_204406) do
+  create_table "access_points", force: :cascade do |t|
+    t.string "IP_Phone"
+>>>>>>> 697a811 (first commit)
     t.string "manufacturer"
     t.string "brand_model"
     t.string "zone"
     t.string "department"
+<<<<<<< HEAD
     t.string "desk_id"
     t.string "condition"
     t.string "asset_state"
@@ -34,26 +41,45 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_24_222613) do
     t.string "condition"
     t.string "asset_state"
     t.string "serial_number"
+=======
+    t.string "condition"
+    t.string "asset_state"
+    t.integer "serial_number"
+>>>>>>> 697a811 (first commit)
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "display_monitors", force: :cascade do |t|
+=======
+  create_table "ip_phones", force: :cascade do |t|
+>>>>>>> 697a811 (first commit)
     t.string "manufacturer"
     t.string "brand_model"
     t.string "zone"
     t.string "department"
+<<<<<<< HEAD
     t.string "desk_id"
     t.string "condition"
     t.string "asset_state"
     t.string "serial_number"
+=======
+    t.string "condition"
+    t.string "asset_state"
+    t.integer "serial_number"
+>>>>>>> 697a811 (first commit)
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "headsets", force: :cascade do |t|
+=======
+  create_table "keyboards", force: :cascade do |t|
+>>>>>>> 697a811 (first commit)
     t.string "manufacturer"
     t.string "brand_model"
     t.string "zone"
@@ -67,7 +93,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_24_222613) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "laptops", force: :cascade do |t|
+=======
+  create_table "mice", force: :cascade do |t|
+>>>>>>> 697a811 (first commit)
     t.string "manufacturer"
     t.string "brand_model"
     t.string "zone"
@@ -81,6 +111,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_24_222613) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "printers", force: :cascade do |t|
     t.string "manufacturer"
     t.string "brand_model"
@@ -107,4 +138,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_24_222613) do
     t.datetime "updated_at", null: false
   end
 
+=======
+>>>>>>> 697a811 (first commit)
 end
