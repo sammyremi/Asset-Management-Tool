@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Mice</h1>
+
+<div id="mice">
+  <% @mice.each do |mouse| %>
+    <%= render mouse %>
+    <p>
+      <%= link_to "Show this mouse", mouse %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New mouse", new_mouse_path %>

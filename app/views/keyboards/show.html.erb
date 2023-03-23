@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @keyboard %>
+
+<div>
+  <%= link_to "Edit this keyboard", edit_keyboard_path(@keyboard) %> |
+  <%= link_to "Back to keyboards", keyboards_path %>
+
+  <%= button_to "Destroy this keyboard", @keyboard, method: :delete %>
+</div>

@@ -1,0 +1,2 @@
+class IpPhone < ApplicationRecord
+end
