@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ruby "3.1.3"
 =======
 ruby "3.2.1"
@@ -10,6 +11,9 @@ ruby "3.2.1"
 =======
 ruby "3.0.2"
 >>>>>>> cf5d622 (DB table: aio, monitor, datacenter, printer)
+=======
+ruby "3.2.1"
+>>>>>>> 1b654af (Gem file)
 
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
