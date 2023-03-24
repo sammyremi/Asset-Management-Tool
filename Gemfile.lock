@@ -259,10 +259,17 @@ DEPENDENCIES
 
 RUBY VERSION
 <<<<<<< HEAD
+<<<<<<< HEAD
    ruby 3.2.1p31
 =======
    ruby 3.1.3p185
 >>>>>>> 697a811 (first commit)
+=======
+   ruby 3.1.3p185
+=======
+   ruby 3.2.1p31
+>>>>>>> cf5d622 (DB table: aio, monitor, datacenter, printer)
+>>>>>>> efb93f5 (DB table: aio, monitor, datacenter, printer)
 
 BUNDLED WITH
    2.4.8

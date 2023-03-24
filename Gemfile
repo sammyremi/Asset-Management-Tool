@@ -2,10 +2,14 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ruby "3.1.3"
 =======
 ruby "3.2.1"
 >>>>>>> acd2c34 (Gem file)
+=======
+ruby "3.0.2"
+>>>>>>> cf5d622 (DB table: aio, monitor, datacenter, printer)
 
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"

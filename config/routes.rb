@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   resources :data_centers
   resources :printers
   resources :display_monitors
@@ -11,6 +12,8 @@ Rails.application.routes.draw do
 =======
 =======
 >>>>>>> bc516a8 (create laptop, headset and phone models)
+=======
+>>>>>>> efb93f5 (DB table: aio, monitor, datacenter, printer)
   resources :access_points
   resources :ip_phones
   resources :mice
@@ -19,6 +22,12 @@ Rails.application.routes.draw do
 >>>>>>> 697a811 (first commit)
 =======
 =======
+=======
+  resources :data_centers
+  resources :printers
+  resources :display_monitors
+  resources :aios
+>>>>>>> cf5d622 (DB table: aio, monitor, datacenter, printer)
   resources :headsets
   resources :smart_phones
   resources :laptops
