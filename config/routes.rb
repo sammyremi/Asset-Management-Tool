@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :data_centers
+  resources :printers
+  resources :display_monitors
+  resources :aios
   resources :headsets
   resources :smart_phones
   resources :laptops

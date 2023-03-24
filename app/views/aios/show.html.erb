@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @aio %>
+
+<div>
+  <%= link_to "Edit this aio", edit_aio_path(@aio) %> |
+  <%= link_to "Back to aios", aios_path %>
+
+  <%= button_to "Destroy this aio", @aio, method: :delete %>
+</div>

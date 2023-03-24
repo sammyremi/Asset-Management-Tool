@@ -1,0 +1,2 @@
+class Aio < ApplicationRecord
+end

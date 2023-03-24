@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Display monitors</h1>
+
+<div id="display_monitors">
+  <% @display_monitors.each do |display_monitor| %>
+    <%= render display_monitor %>
+    <p>
+      <%= link_to "Show this display monitor", display_monitor %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New display monitor", new_display_monitor_path %>

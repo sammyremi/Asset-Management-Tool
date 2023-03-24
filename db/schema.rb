@@ -10,7 +10,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_22_215445) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_24_222613) do
+  create_table "aios", force: :cascade do |t|
+    t.string "manufacturer"
+    t.string "brand_model"
+    t.string "zone"
+    t.string "department"
+    t.string "desk_id"
+    t.string "condition"
+    t.string "asset_state"
+    t.string "serial_number"
+    t.string "location"
+    t.string "ssd"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "data_centers", force: :cascade do |t|
+    t.string "device_type"
+    t.string "brand_model"
+    t.string "manufacturer"
+    t.string "department"
+    t.string "condition"
+    t.string "asset_state"
+    t.string "serial_number"
+    t.string "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "display_monitors", force: :cascade do |t|
+    t.string "manufacturer"
+    t.string "brand_model"
+    t.string "zone"
+    t.string "department"
+    t.string "desk_id"
+    t.string "condition"
+    t.string "asset_state"
+    t.string "serial_number"
+    t.string "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "headsets", force: :cascade do |t|
     t.string "manufacturer"
     t.string "brand_model"
@@ -34,6 +76,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_22_215445) do
     t.string "condition"
     t.string "asset_state"
     t.integer "serial_number"
+    t.string "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "printers", force: :cascade do |t|
+    t.string "manufacturer"
+    t.string "brand_model"
+    t.string "zone"
+    t.string "department"
+    t.string "condition"
+    t.string "asset_state"
+    t.string "serial_number"
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

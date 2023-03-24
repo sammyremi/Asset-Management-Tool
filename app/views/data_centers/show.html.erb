@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @data_center %>
+
+<div>
+  <%= link_to "Edit this data center", edit_data_center_path(@data_center) %> |
+  <%= link_to "Back to data centers", data_centers_path %>
+
+  <%= button_to "Destroy this data center", @data_center, method: :delete %>
+</div>
