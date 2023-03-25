@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :zone_is
+  resources :zone_hs
+  resources :zone_es
+  resources :zone_ds
   root 'home#index'
   resources :data_centers
   resources :printers
