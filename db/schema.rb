@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_24_222613) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_25_161139) do
   create_table "access_points", force: :cascade do |t|
     t.string "IP_Phone"
     t.string "manufacturer"
@@ -158,6 +158,50 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_24_222613) do
     t.string "asset_state"
     t.integer "serial_number"
     t.string "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "zone_ds", force: :cascade do |t|
+    t.string "personel"
+    t.string "desk_id"
+    t.string "status"
+    t.string "lan_port"
+    t.string "power_socket"
+    t.string "furniture"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "zone_es", force: :cascade do |t|
+    t.string "personel"
+    t.string "desk_id"
+    t.string "status"
+    t.string "lan_port"
+    t.string "power_socket"
+    t.string "furniture"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "zone_hs", force: :cascade do |t|
+    t.string "personel"
+    t.string "desk_id"
+    t.string "status"
+    t.string "lan_port"
+    t.string "power_socket"
+    t.string "furniture"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "zone_is", force: :cascade do |t|
+    t.string "personel"
+    t.string "desk_id"
+    t.string "status"
+    t.string "lan_port"
+    t.string "power_socket"
+    t.string "furniture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
