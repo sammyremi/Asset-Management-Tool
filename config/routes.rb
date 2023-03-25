@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'home#index'
   resources :data_centers
   resources :printers
   resources :display_monitors
