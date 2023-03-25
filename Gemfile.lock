@@ -202,22 +202,10 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-<<<<<<< HEAD
-<<<<<<< HEAD
-    warden (1.2.9)
-      rack (>= 2.0.9)
-=======
     tzinfo-data (1.2022.7)
       tzinfo (>= 1.0.0)
->>>>>>> 697a811 (first commit)
-=======
-    tzinfo-data (1.2022.7)
-      tzinfo (>= 1.0.0)
-=======
     warden (1.2.9)
       rack (>= 2.0.9)
->>>>>>> d7a6553 (Add devise gem)
->>>>>>> 1df537a (Add devise gem)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -258,18 +246,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-<<<<<<< HEAD
-<<<<<<< HEAD
    ruby 3.2.1p31
-=======
-   ruby 3.1.3p185
->>>>>>> 697a811 (first commit)
-=======
-   ruby 3.1.3p185
-=======
-   ruby 3.2.1p31
->>>>>>> cf5d622 (DB table: aio, monitor, datacenter, printer)
->>>>>>> efb93f5 (DB table: aio, monitor, datacenter, printer)
 
 BUNDLED WITH
    2.4.8
