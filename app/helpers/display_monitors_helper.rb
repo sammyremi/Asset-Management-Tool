@@ -1,0 +1,2 @@
+module DisplayMonitorsHelper
+end

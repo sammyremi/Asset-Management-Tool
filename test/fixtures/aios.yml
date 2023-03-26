@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  manufacturer: MyString
+  brand_model: MyString
+  zone: MyString
+  department: MyString
+  desk_id: MyString
+  condition: MyString
+  asset_state: MyString
+  serial_number: MyString
+  location: MyString
+  ssd: MyString
+
+two:
+  manufacturer: MyString
+  brand_model: MyString
+  zone: MyString
+  department: MyString
+  desk_id: MyString
+  condition: MyString
+  asset_state: MyString
+  serial_number: MyString
+  location: MyString
+  ssd: MyString

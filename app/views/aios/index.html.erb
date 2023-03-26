@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Aios</h1>
+
+<div id="aios">
+  <% @aios.each do |aio| %>
+    <%= render aio %>
+    <p>
+      <%= link_to "Show this aio", aio %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New aio", new_aio_path %>

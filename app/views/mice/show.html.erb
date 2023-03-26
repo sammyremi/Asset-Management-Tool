@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @mouse %>
+
+<div>
+  <%= link_to "Edit this mouse", edit_mouse_path(@mouse) %> |
+  <%= link_to "Back to mice", mice_path %>
+
+  <%= button_to "Destroy this mouse", @mouse, method: :delete %>
+</div>

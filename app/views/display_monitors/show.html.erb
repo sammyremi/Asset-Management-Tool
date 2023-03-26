@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @display_monitor %>
+
+<div>
+  <%= link_to "Edit this display monitor", edit_display_monitor_path(@display_monitor) %> |
+  <%= link_to "Back to display monitors", display_monitors_path %>
+
+  <%= button_to "Destroy this display monitor", @display_monitor, method: :delete %>
+</div>

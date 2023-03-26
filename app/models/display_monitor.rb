@@ -1,0 +1,2 @@
+class DisplayMonitor < ApplicationRecord
+end
