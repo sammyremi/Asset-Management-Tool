@@ -1,0 +1,47 @@
+<%= form_with(model: zone_r) do |form| %>
+  <% if zone_r.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(zone_r.errors.count, "error") %> prohibited this zone_r from being saved:</h2>
+
+      <ul>
+        <% zone_r.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :personnel, style: "display: block" %>
+    <%= form.text_field :personnel %>
+  </div>
+
+  <div>
+    <%= form.label :desk_id, style: "display: block" %>
+    <%= form.text_field :desk_id %>
+  </div>
+
+  <div>
+    <%= form.label :status, style: "display: block" %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div>
+    <%= form.label :lan_port, style: "display: block" %>
+    <%= form.text_field :lan_port %>
+  </div>
+
+  <div>
+    <%= form.label :power_socket, style: "display: block" %>
+    <%= form.text_field :power_socket %>
+  </div>
+
+  <div>
+    <%= form.label :furniture, style: "display: block" %>
+    <%= form.text_field :furniture %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
