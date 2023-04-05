@@ -1,3 +1,51 @@
-.list-group a {
-    color: black;
-  }
+.child {
+  text-align: center;
+  width: 45%;
+  border: 1px solid red;
+  margin: 10px;
+}
+
+.child-3 {
+  text-align: center;
+  width: 92%;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.container {
+  justify-content: center;
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 75%;
+  /* padding: 10px; */
+  column-gap: 5px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 60% 10%;
+  padding: 10px 20px;
+  column-gap: 30px;
+  justify-content: start;
+}
+
+.grid-item {
+  padding: 5px;
+  text-align: center;
+}
+
+.grid-item-2 {
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: 60%;
+  padding: 10px;
+  justify-content: center;
+  column-gap: 10px;
+}
