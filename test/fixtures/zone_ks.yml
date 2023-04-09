@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Personnel: MyString
+  Desk_ID: MyString
+  Status: MyString
+  LAN_Port: MyString
+  Power_Socket: MyString
+  Furniture: MyString
+
+two:
+  Personnel: MyString
+  Desk_ID: MyString
+  Status: MyString
+  LAN_Port: MyString
+  Power_Socket: MyString
+  Furniture: MyString

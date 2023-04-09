@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :zone_ms
+  resources :zone_ls
+  resources :zone_ks
+  resources :zone_js
   resources :access_points
   resources :ip_phones
   resources :mice
